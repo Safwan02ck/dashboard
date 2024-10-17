@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leads Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Leads Dashboard</h1>
+  </header>
+
+  <main class="main-content">
+    <div class="cards">
+      <div class="card">
+        <h3>Total Leads</h3>
+        <div class="card-body">
+          <p id="total-leads" class="number">1234</p>
+          <small>+20.1% from last month</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Conversion Rate</h3>
+        <div class="card-body">
+          <p id="conversion-rate" class="number">24.5%</p>
+          <small>+1.2% from last month</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Average Deal Size</h3>
+        <div class="card-body">
+          <p id="avg-deal-size" class="number">$8,942</p>
+          <small>+4.75% from last month</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Open Deals</h3>
+        <div class="card-body">
+          <p id="open-deals" class="number">573</p>
+          <small>+54 since last hour</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="charts">
+      <div class="chart-container">
+        <h3>Monthly Leads</h3>
+        <canvas id="leadsChart"></canvas>
+      </div>
+
+      <div class="recent-leads">
+        <h3>Recent Leads</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="recent-leads-table">
+            <!-- Leads will be dynamically inserted here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
