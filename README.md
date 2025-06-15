@@ -5,7 +5,7 @@ A responsive web-based dashboard that displays real-time insights into lead data
 Live Demo
 
 Check out the live version of this dashboard here:  
-(https://leaderdashboard.netlify.app/)**
+https://leaderdashboard.netlify.app/
 
 
 Features
